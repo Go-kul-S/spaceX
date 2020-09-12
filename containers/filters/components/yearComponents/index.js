@@ -12,6 +12,7 @@ class YearComponent extends React.Component{
     render(){
         return(
             <>
+            <div style={{backgroundColor : "#fff"}}>
             <h1 style={{textAlign:"center"}}>
                 Launch Year
             </h1>
@@ -36,6 +37,7 @@ class YearComponent extends React.Component{
                     ) 
                 }
             </Row>
+            </div>
             </>
         )
     }

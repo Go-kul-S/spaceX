@@ -11,11 +11,12 @@ const { Meta } = Card;
 const ProgramListCard = (props) => (
     <Card
         hoverable
-        style={{ width: "100%", padding:"20%" }}
+        style={{ width: "100%", padding:"10%"}}
         cover={<img alt="example" src={props.details.links.mission_patch_small} />}
     >
-        <p>
+        <p style={{color : "#595E9D"}}>
             <b>{props.details.mission_name}</b>
+            <b>  #{props.details.flight_number}</b>
         </p>
         <p>
             <b>Mission IDs:</b>
@@ -23,15 +24,9 @@ const ProgramListCard = (props) => (
                 {
                     props.details.mission_id && props.details.mission_id.length && props.details.mission_id.map(mission => <Tag color={TAG_COLOR}>{mission}</Tag>) || "-"
                 }
-            </p>
-        </p>
-        <p>
-            <b>Launch Year:</b> {props.details.launch_year}
-        </p>
-        <p>
-            <b>Successfull Launch:</b> {props.details.launch_success ? "True" : "False"}
-        </p>
-        <p>
+            </p><br/>
+            <b>Launch Year:</b> {props.details.launch_year}<br/>
+            <b>Successfull Launch:</b> {props.details.launch_success ? "True" : "False"}<br/>
             <b>Successfull Landing:</b> {props.details.rocket.first_stage.cores[0].land_success ? "True" : 'False'}
         </p>
     </Card>

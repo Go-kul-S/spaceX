@@ -52,12 +52,12 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <div style={{overflowX : "hidden"}}>
+            <div style={{overflowX : "hidden", backgroundColor : "#F2F2F2"}}>
                 <div>
                     <h1>SpacEx Launch Programs</h1>
                 </div>
-                <Row gutter="16px">
-                    <Col lg={3}>
+                <Row gutter={16}>
+                    <Col lg={3} style={{backgroundColor : "#fff"}}>
                         <FilterContainer
                             handleFilterChange={this._handleFilterChange}
                             launchYear={this.state.queryParams.launch_year}

@@ -52,7 +52,7 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{overflowX : "hidden"}}>
                 <div>
                     <h1>SpacEx Launch Programs</h1>
                 </div>
@@ -84,7 +84,7 @@ class Dashboard extends React.Component {
                         }
                     </Col>
                 </Row>
-                <div style={{position: "relative", top: "50%", left: "50%", margin: "-25px 0 0 -25px"}}>
+                <div style={{position: "relative", top: "50%", left: "50%"}}>
                     <h1>Developed By : Gokul S</h1>
                 </div>
             </div>

@@ -1,0 +1,25 @@
+{
+  "name": "next-with-antd",
+  "version": "1.0.0",
+  "repository": "https://github.com/hanpama/next-with-antd",
+  "description": "",
+  "keywords": [],
+  "author": "Max Choi",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.6.3",
+    "axios": "^0.20.0",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "lodash": "^4.17.20",
+    "next": "^9.5.3",
+    "query-string": "^6.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

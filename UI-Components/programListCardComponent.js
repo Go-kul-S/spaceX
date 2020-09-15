@@ -12,7 +12,7 @@ const ProgramListCard = (props) => (
     <Card
         hoverable
         style={{ width: "100%", padding:"10%"}}
-        cover={<img alt="example" src={props.details.links.mission_patch_small} />}
+        cover={<img alt="example" style={{width:"50%", margin:"auto"}} src={props.details.links.mission_patch} />}
     >
         <p style={{color : "#595E9D"}}>
             <b>{props.details.mission_name}</b>

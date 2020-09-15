@@ -12,7 +12,7 @@ class ProgramList extends React.Component{
                     {
                         this.props.programList && this.props.programList.length && this.props.programList.map( program => {
                             return(
-                                <Col lg={6} sm={24} md={12} xs={24}>
+                                <Col lg={6} sm={12} md={12} xs={24}>
                                     <ProgramListCard 
                                         details={program}
                                     />

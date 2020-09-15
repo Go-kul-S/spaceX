@@ -35,7 +35,6 @@ class Dashboard extends React.Component {
             });
             let { queryParams } = this.state
             let QueryString = Stringify(queryParams)
-            QueryString = QueryString.replace(/\&/g, '&amp;')
             const programList = await getSpaceXLaunchList(QueryString);
             this.setState({
                 programList,
